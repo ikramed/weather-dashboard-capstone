@@ -1,10 +1,8 @@
-function Header() {
+export default function Header() {
   return (
-    <div>
+    <header className="header">
       <h1>Weather Dashboard</h1>
       <p>Check real-time weather anywhere</p>
-    </div>
+    </header>
   );
 }
-
-export default Header;

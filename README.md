@@ -1,4 +1,4 @@
-🌤️ Weather Dashboard Capstone
+Weather Dashboard Capstone
 
 A modern and responsive Weather Dashboard built with React, created as the Final Capstone Project for the ALX Front-End Web Development Program.
 This application allows users to search for any city in the world and instantly view real-time weather data with a clean UI, smooth animations, and dynamic visual effects based on weather conditions.

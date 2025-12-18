@@ -1,16 +1,15 @@
-function WeatherCard({ weather }) {
-  if (!weather) return null;
+import "./WeatherCard.css";
 
+export default function WeatherCard({ weather }) {
   return (
     <div className="weather-card">
       <h2>{weather.city}</h2>
-      <div className="temp">{weather.temp}°C</div>
-      <p>Humidity: {weather.humidity}%</p>
-      <p>Weather: {weather.main}</p>
-      <p>Wind Speed: {weather.wind} m/s</p>
+      <h1>{weather.temp}°C</h1>
       <p>{weather.description}</p>
+      <div className="details">
+        <span>💧 {weather.humidity}%</span>
+        <span>💨 {weather.wind} m/s</span>
+      </div>
     </div>
   );
 }
-
-export default WeatherCard;

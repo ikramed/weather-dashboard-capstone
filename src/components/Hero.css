@@ -1,0 +1,38 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/public/images/weather-bg.jpg') no-repeat center center/cover;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+
+.overlay {
+  text-align: center;
+  color: #ffffff;
+  animation: fadeIn 1.5s ease forwards;
+  z-index: 2;
+  position: relative;
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  opacity: 0.7;
+}
