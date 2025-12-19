@@ -13,9 +13,9 @@
 }
 
 .logo {
-  display: flex;        /* مهم باش الصورة والنص بجنب بعض */
-  align-items: center;  /* نص في الوسط مع الصورة */
-  gap: 10px;            /* مسافة بين الصورة والنص */
+  display: flex;       
+  align-items: center; 
+  gap: 10px;           
 }
 
 .logo img {
