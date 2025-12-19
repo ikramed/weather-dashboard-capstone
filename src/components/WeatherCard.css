@@ -47,6 +47,13 @@
 .hour {
   text-align: center;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hour strong {
+  font-size: 1.1rem;
 }
 
 /* Daily */
@@ -61,12 +68,4 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.1rem;
-}
-.hour strong {
-  font-size: 1.1rem;
-}
-.hour {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

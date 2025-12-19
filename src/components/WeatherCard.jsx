@@ -4,16 +4,11 @@ export default function WeatherCard({ weather }) {
   return (
     <div className="weather-card">
       <h2>{weather.city}</h2>
-
       <h1>
         {weather.temp}°C <span className="f">{weather.tempF}°F</span>
       </h1>
-
       <p>{weather.description}</p>
-
-      <p className="time">
-        Météo {weather.day} {weather.time}
-      </p>
+      <p className="time">Weather {weather.day} {weather.time}</p>
 
       <div className="details">
         <span>🌧️ {weather.precipitation}%</span>
@@ -35,9 +30,7 @@ export default function WeatherCard({ weather }) {
           <div key={i} className="day">
             <span>{d.day}</span>
             <span>{d.condition}</span>
-            <strong>
-              {d.max}° / {d.min}°
-            </strong>
+            <strong>{d.max}° / {d.min}°</strong>
           </div>
         ))}
       </div>
