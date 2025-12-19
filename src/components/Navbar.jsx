@@ -3,7 +3,7 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      {/* الصورة + النص بجانب بعض */}
+    
       <div className="logo">
         <img src="/weather-logo.png" alt="Logo" />
         <span>WeatherApp</span>
